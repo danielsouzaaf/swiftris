@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		652F9E5C1F896CA000628FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652F9E5B1F896CA000628FCC /* AppDelegate.swift */; };
-		652F9E5E1F896CA000628FCC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 652F9E5D1F896CA000628FCC /* GameScene.sks */; };
 		652F9E601F896CA000628FCC /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 652F9E5F1F896CA000628FCC /* Actions.sks */; };
 		652F9E621F896CA000628FCC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652F9E611F896CA000628FCC /* GameScene.swift */; };
 		652F9E641F896CA000628FCC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652F9E631F896CA000628FCC /* GameViewController.swift */; };
@@ -17,6 +16,9 @@
 		652F9E6C1F896CA000628FCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652F9E6A1F896CA000628FCC /* LaunchScreen.storyboard */; };
 		652F9E771F896CA000628FCC /* SwiftrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652F9E761F896CA000628FCC /* SwiftrisTests.swift */; };
 		652F9E821F896CA100628FCC /* SwiftrisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652F9E811F896CA100628FCC /* SwiftrisUITests.swift */; };
+		652F9E991F89733800628FCC /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652F9E981F89733800628FCC /* Array2D.swift */; };
+		652F9E9B1F8975EE00628FCC /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652F9E9A1F8975EE00628FCC /* Block.swift */; };
+		652F9E9D1F8978BD00628FCC /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652F9E9C1F8978BC00628FCC /* Shape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 /* Begin PBXFileReference section */
 		652F9E581F896CA000628FCC /* Swiftris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		652F9E5B1F896CA000628FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		652F9E5D1F896CA000628FCC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		652F9E5F1F896CA000628FCC /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		652F9E611F896CA000628FCC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		652F9E631F896CA000628FCC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +54,11 @@
 		652F9E7D1F896CA100628FCC /* SwiftrisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftrisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		652F9E811F896CA100628FCC /* SwiftrisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftrisUITests.swift; sourceTree = "<group>"; };
 		652F9E831F896CA100628FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652F9E8F1F896FA000628FCC /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		652F9E901F896FC100628FCC /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		652F9E981F89733800628FCC /* Array2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		652F9E9A1F8975EE00628FCC /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		652F9E9C1F8978BC00628FCC /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +89,12 @@
 		652F9E4F1F896CA000628FCC = {
 			isa = PBXGroup;
 			children = (
+				652F9E901F896FC100628FCC /* Sprites.atlas */,
 				652F9E5A1F896CA000628FCC /* Swiftris */,
 				652F9E751F896CA000628FCC /* SwiftrisTests */,
 				652F9E801F896CA100628FCC /* SwiftrisUITests */,
 				652F9E591F896CA000628FCC /* Products */,
+				652F9E8F1F896FA000628FCC /* Sounds */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				652F9E5B1F896CA000628FCC /* AppDelegate.swift */,
-				652F9E5D1F896CA000628FCC /* GameScene.sks */,
 				652F9E5F1F896CA000628FCC /* Actions.sks */,
 				652F9E611F896CA000628FCC /* GameScene.swift */,
 				652F9E631F896CA000628FCC /* GameViewController.swift */,
@@ -112,6 +119,9 @@
 				652F9E681F896CA000628FCC /* Assets.xcassets */,
 				652F9E6A1F896CA000628FCC /* LaunchScreen.storyboard */,
 				652F9E6D1F896CA000628FCC /* Info.plist */,
+				652F9E981F89733800628FCC /* Array2D.swift */,
+				652F9E9A1F8975EE00628FCC /* Block.swift */,
+				652F9E9C1F8978BC00628FCC /* Shape.swift */,
 			);
 			path = Swiftris;
 			sourceTree = "<group>";
@@ -242,7 +252,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				652F9E671F896CA000628FCC /* Main.storyboard in Resources */,
-				652F9E5E1F896CA000628FCC /* GameScene.sks in Resources */,
 				652F9E691F896CA000628FCC /* Assets.xcassets in Resources */,
 				652F9E6C1F896CA000628FCC /* LaunchScreen.storyboard in Resources */,
 				652F9E601F896CA000628FCC /* Actions.sks in Resources */,
@@ -271,6 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				652F9E621F896CA000628FCC /* GameScene.swift in Sources */,
+				652F9E9D1F8978BD00628FCC /* Shape.swift in Sources */,
+				652F9E991F89733800628FCC /* Array2D.swift in Sources */,
+				652F9E9B1F8975EE00628FCC /* Block.swift in Sources */,
 				652F9E641F896CA000628FCC /* GameViewController.swift in Sources */,
 				652F9E5C1F896CA000628FCC /* AppDelegate.swift in Sources */,
 			);
